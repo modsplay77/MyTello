@@ -17,7 +17,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:background="@color/blue"
-        android:gravity="center_vertical"
+
         android:orientation="vertical">
 
         <TextView
@@ -29,37 +29,46 @@
             android:textAlignment="center"
             android:textColor="@color/red"
             android:textSize="50sp" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tello"
-        android:padding="10dp"
-        android:background="@color/white"
-        android:contentDescription="@string/todo" />
 
-        <Button
-            android:id="@+id/proyecto"
+        <TextView
+            android:id="@+id/ordenes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="@string/ordenes"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/takeoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:padding="10dp"
-            android:text="@string/nuevo"
-            android:textAlignment="textStart"
+            android:text="@string/takeoff"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
 
         <Button
-            android:id="@+id/cargar"
-            android:layout_width="match_parent"
+            android:id="@+id/arriva"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/white"
             android:orientation="vertical"
             android:padding="10dp"
-            android:text="@string/cargar"
+            android:text="@string/arriva"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="20sp" />

@@ -5,5 +5,9 @@
     <string name="desc">Programa tu plan de vuelo</string>
     <string name="nuevo">Crear nuevo Proyecto</string>
     <string name="cargar">Cargar Proyecto</string>
+    <string name="todo">TODO</string>
+    <string name="takeoff">takeoff</string>
+    <string name="arriva">up</string>
+    <string name="ordenes">Selecciona las ordenes</string>
 
 </resources>

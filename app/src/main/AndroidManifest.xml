@@ -30,6 +30,16 @@
             android:parentActivityName=".MainActivity">
 
         </activity>
+        <activity
+            android:name="nuevo"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name="cargar"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>
