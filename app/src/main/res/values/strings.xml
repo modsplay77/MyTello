@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyTello</string>
+    <string name="saludo">Bienvenid@</string>
+    <string name="ingresar">Entrar</string>
+    <string name="desc">Programa tu plan de vuelo</string>
+    <string name="nuevo">Crear nuevo Proyecto</string>
+    <string name="cargar">Cargar Proyecto</string>
+
+</resources>
