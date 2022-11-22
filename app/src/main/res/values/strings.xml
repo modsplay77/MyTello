@@ -6,12 +6,14 @@
     <string name="nuevo">Crear nuevo Proyecto</string>
     <string name="cargar">Cargar Proyecto</string>
     <string name="todo">TODO</string>
-    <string name="takeoff">takeoff</string>
-    <string name="arriva">up</string>
+
+
     <string name="ordenes">Selecciona las ordenes</string>
-    <string name="nueva_orden">Añadir orden</string>
+    <string name="nueva_orden">Nueva orden</string>
     <string name="borrar">Eliminar orden</string>
     <string name="cambiar_orden">Cambiar secuencia</string>
     <string name="lista">Plan de vuelo:</string>
+    <string name="form">Añade los datos del plan de vuelo</string>
+    <string name="comando">Inserta el primer comando</string>
 
 </resources>
