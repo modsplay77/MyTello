@@ -9,5 +9,9 @@
     <string name="takeoff">takeoff</string>
     <string name="arriva">up</string>
     <string name="ordenes">Selecciona las ordenes</string>
+    <string name="nueva_orden">Añadir orden</string>
+    <string name="borrar">Eliminar orden</string>
+    <string name="cambiar_orden">Cambiar secuencia</string>
+    <string name="lista">Plan de vuelo:</string>
 
 </resources>
