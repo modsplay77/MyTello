@@ -16,5 +16,7 @@
     <string name="form">Añade los datos del plan de vuelo</string>
     <string name="comando">Inserta el primer comando</string>
     <string name="guardar">Insertar</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

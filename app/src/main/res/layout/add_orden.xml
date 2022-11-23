@@ -40,49 +40,14 @@
        android:background="@color/white"
        android:textColor="@color/black"
        />
-    <LinearLayout
-        android:id="@+id/form"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-
-        >
-
-        <EditText
-            android:id="@+id/op1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:backgroundTint="@color/blue"
-            android:hint="@string/comando"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColor="@color/black"
-            android:textColorHint="#039BE5"
-            android:textSize="20sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/guardar"
-            android:text="@string/guardar"
-            android:layout_gravity="center"
-
-            />
-        <TextView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/purple_200"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textAlignment="textStart"
-
-            />
+   <fragment
+       android:id="@+id/fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       class="com.example.mytello.DatosFragment"
+       tools:layout="@layout/fragment_datos"
+       />
 
 
-
-
-    </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
