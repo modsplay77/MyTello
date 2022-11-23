@@ -15,9 +15,11 @@ public class DatosFragment extends Fragment {
 
     private EditText op1;
     private TextView list;
+    private Button guardar;
 
     public DatosFragment() {
         // Required empty public constructor
+
     }
 
 
@@ -27,7 +29,7 @@ public class DatosFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_datos, container, false);
-        Button guardar = view.findViewById(R.id.guardar);
+        guardar = view.findViewById(R.id.guardar);
         op1 = view.findViewById(R.id.op1);
         list = view.findViewById(R.id.list);
 
@@ -36,7 +38,7 @@ public class DatosFragment extends Fragment {
             public void onClick(View view){
 
                 String resultado = op1.getText().toString();
-                list.setText(String.valueOf(resultado.length()));
+                list.setText(resultado);
 
             }
         });
