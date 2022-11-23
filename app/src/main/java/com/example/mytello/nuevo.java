@@ -13,14 +13,33 @@ public class nuevo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo);
 
-        Button boton = findViewById(R.id.añadir);
+        Button añadir = findViewById(R.id.añadir);
+        Button borrar = findViewById(R.id.borrar);
+        Button ordenar = findViewById(R.id.ordenar);
 
-        boton.setOnClickListener(new View.OnClickListener() {
+        añadir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), add_orden.class);
+                Intent intent = new Intent(v.getContext(), nuevo.class);
                 startActivityForResult(intent, 0);
-                setContentView(R.layout.add_orden);
+                setContentView(R.layout.nuevo);
+            }
+        });
+
+        borrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), nuevo.class);
+                startActivityForResult(intent, 0);
+                setContentView(R.layout.nuevo);
+            }
+        });
+        ordenar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), nuevo.class);
+                startActivityForResult(intent, 0);
+                setContentView(R.layout.nuevo);
             }
         });
     }

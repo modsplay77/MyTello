@@ -14,7 +14,7 @@
     <string name="cambiar_orden">Cambiar secuencia</string>
     <string name="lista">Plan de vuelo:</string>
     <string name="form">Añade los datos del plan de vuelo</string>
-    <string name="comando">Inserta el primer comando</string>
+    <string name="comando">Inserta comando</string>
     <string name="guardar">Insertar</string>
 
     <string name="up">Ascend to “x” cm. x = 20-500</string>

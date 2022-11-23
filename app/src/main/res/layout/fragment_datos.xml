@@ -4,13 +4,115 @@
     android:id="@+id/lista_ordenes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mytello.add_orden">
-<LinearLayout
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    tools:context="com.example.mytello.nuevo">
+
+    <LinearLayout
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/up"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            />
+        <Button
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/down"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+            />
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+            />
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/right"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+
+            />
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forward"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+            />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/cw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cw"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/ccw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ccw"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flip"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+
     <EditText
         android:id="@+id/op1"
         android:layout_width="match_parent"
@@ -24,26 +126,24 @@
         android:textColorHint="#039BE5"
         android:textSize="20sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guardar"
-        android:text="@string/guardar"
-        android:layout_below="@id/op1"
-        android:layout_gravity="center"
-
-        />
         <TextView
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"
             android:padding="20sp"
-            android:layout_margin="50sp"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textAlignment="textStart"
 
             />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guardar"
+        android:text="@string/guardar"
+        android:layout_gravity="center"
+        />
+
 </LinearLayout>
 </RelativeLayout>

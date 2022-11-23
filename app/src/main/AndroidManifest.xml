@@ -23,7 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
-        tools:targetApi="31">
+        tools:targetApi="33">
 
 
         <activity
@@ -52,11 +52,6 @@
         <activity
             android:name="cargar"
             android:parentActivityName=".MainActivity">
-
-        </activity>
-        <activity
-            android:name=".add_orden"
-            android:parentActivityName=".nuevo">
 
         </activity>
     </application>
