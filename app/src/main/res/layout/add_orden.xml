@@ -5,19 +5,15 @@
     android:layout_height="match_parent"
     android:id="@+id/caja"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:background="@color/white"
-        android:orientation="vertical">
-
+<LinearLayout
+    android:id="@+id/cabecera"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
         <TextView
             android:id="@+id/logo"
             android:layout_width="match_parent"
@@ -36,18 +32,119 @@
        android:text="@string/form"
        android:textAlignment="center"
        android:padding="10dp"
-       android:layout_marginTop="30dp"
        android:background="@color/white"
        android:textColor="@color/black"
        />
-   <fragment
-       android:id="@+id/fragment"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       class="com.example.mytello.DatosFragment"
-       tools:layout="@layout/fragment_datos"
-       />
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/lista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/cabecera">
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/up"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            />
+        <Button
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/down"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
 
 
-    </LinearLayout>
+            />
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+            />
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/right"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+
+            />
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forward"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+
+            />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/cw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cw"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/ccw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ccw"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flip"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+</LinearLayout>
+
+
+
 </RelativeLayout>

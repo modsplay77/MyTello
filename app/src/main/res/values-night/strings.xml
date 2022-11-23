@@ -8,4 +8,13 @@
     <string name="form">Añade los datos del plan de vuelo</string>
     <string name="comando">Inserta el primer comando</string>
     <string name="guardar">Insertar</string>
+    <string name="down">down “x” Descend to “x” cm. x = 20-500</string>
+    <string name="left">Fly left for “x” cm. “x” = 20-500</string>
+    <string name="right">Fly right for “x” cm. “x” = 20-500</string>
+    <string name="forward">Fly forward for “x” cm. “x” = 20-500</string>
+    <string name="back">Fly backward for “x” cm. “x” = 20-500</string>
+    <string name="cw">Rotate “x” degrees clockwise. “x” = 1-360</string>
+    <string name="ccw">Rotate “x” degrees counterclockwise. “x” = 1-360</string>
+    <string name="flip">Flip in “x” direction. “l” = left “r” = right “f” = forward “b” = back</string>
+    <string name="speed">Set speed to “x” cm/s. x = 10-100</string>
 </resources>

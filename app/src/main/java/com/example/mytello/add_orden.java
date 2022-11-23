@@ -2,12 +2,9 @@ package com.example.mytello;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 public class add_orden extends AppCompatActivity {
 
@@ -26,7 +23,16 @@ public class add_orden extends AppCompatActivity {
         adelante
         atras
         */
+        Button up = findViewById(R.id.añadir);
 
+        up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), add_orden.class);
+                startActivityForResult(intent, 0);
+                setContentView(R.layout.add_orden);
+            }
+        });
 
 
     }
