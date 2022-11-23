@@ -15,5 +15,6 @@
     <string name="lista">Plan de vuelo:</string>
     <string name="form">Añade los datos del plan de vuelo</string>
     <string name="comando">Inserta el primer comando</string>
+    <string name="guardar">Insertar</string>
 
 </resources>
