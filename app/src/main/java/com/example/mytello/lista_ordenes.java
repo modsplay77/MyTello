@@ -11,13 +11,13 @@ import android.widget.TextView;
 
 
 
-public class DatosFragment extends Fragment {
+public class lista_ordenes extends Fragment {
 
     private EditText op1;
     private TextView list;
     private Button guardar;
 
-    public DatosFragment() {
+    public lista_ordenes() {
         // Required empty public constructor
 
     }
@@ -26,7 +26,7 @@ public class DatosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_datos, container, false);
+        View view = inflater.inflate(R.layout.lista_ordenes, container, false);
         guardar = view.findViewById(R.id.guardar);
         op1 = view.findViewById(R.id.op1);
         list = view.findViewById(R.id.list);

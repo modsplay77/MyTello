@@ -13,25 +13,25 @@ public class nuevo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo);
 
-        Button añadir = findViewById(R.id.añadir);
-        Button borrar = findViewById(R.id.borrar);
-        Button ordenar = findViewById(R.id.ordenar);
+        Button anadir = findViewById(R.id.añadir);
+        //Button borrar = findViewById(R.id.borrar);
+        //Button ordenar = findViewById(R.id.ordenar);
 
-        añadir.setOnClickListener(new View.OnClickListener() {
+        anadir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), nuevo.class);
+                Intent intent = new Intent(v.getContext(), lista_ordenes.class);
                 startActivityForResult(intent, 0);
-                setContentView(R.layout.nuevo);
+                setContentView(R.layout.lista_ordenes);
             }
         });
 
-        borrar.setOnClickListener(new View.OnClickListener() {
+    /*    borrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), nuevo.class);
                 startActivityForResult(intent, 0);
-                setContentView(R.layout.nuevo);
+                setContentView(R.id.fragment);
             }
         });
         ordenar.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +41,6 @@ public class nuevo extends AppCompatActivity {
                 startActivityForResult(intent, 0);
                 setContentView(R.layout.nuevo);
             }
-        });
+        });*/
     }
 }

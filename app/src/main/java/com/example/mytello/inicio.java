@@ -21,14 +21,14 @@ public class inicio extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-        Button cargar = findViewById(R.id.cargar);
+       /* Button cargar = findViewById(R.id.cargar);
         cargar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), cargar.class);
                 startActivityForResult(intent, 0);
             }
-        });
+        });*/
 
     }
 

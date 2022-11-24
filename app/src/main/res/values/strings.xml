@@ -27,5 +27,7 @@
     <string name="ccw">Rotate “x” degrees counterclockwise. “x” = 1-360</string>
     <string name="flip">Flip in “x” direction. “l” = left “r” = right “f” = forward “b” = back</string>
     <string name="speed">Set speed to “x” cm/s. x = 10-100</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

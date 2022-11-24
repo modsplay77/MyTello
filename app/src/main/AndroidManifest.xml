@@ -40,20 +40,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name="inicio"
+            android:name=".inicio"
             android:parentActivityName=".MainActivity">
 
         </activity>
         <activity
-            android:name="nuevo"
+            android:name=".nuevo"
             android:parentActivityName=".MainActivity">
 
         </activity>
         <activity
-            android:name="cargar"
+            android:name="lista_ordenes"
             android:parentActivityName=".MainActivity">
 
         </activity>
+
     </application>
 
 </manifest>
