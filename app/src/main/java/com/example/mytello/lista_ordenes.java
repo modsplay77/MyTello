@@ -1,45 +1,33 @@
 package com.example.mytello;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
+public class lista_ordenes extends AppCompatActivity {
 
-
-public class lista_ordenes extends Fragment {
-
-    private EditText op1;
-    private TextView list;
-    private Button guardar;
-
-    public lista_ordenes() {
-        // Required empty public constructor
-
-    }
+    private Button up,down,left,right,forward,back,cw,ccw,flip,speed;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.lista_ordenes, container, false);
-        guardar = view.findViewById(R.id.guardar);
-        op1 = view.findViewById(R.id.op1);
-        list = view.findViewById(R.id.list);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.lista_ordenes);
+//crear ordenes, 1era, 2da..etc.. y mostrarlos en un fragment en este layout,
+// confirmar para poder añadirlo en el layout en la activity "Nuevo" con un fragment.
 
-        guardar.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View view){
+     /*   Button up = findViewById(R.id.guardar_orden);
+        Button down = findViewById(R.id.guardar_orden);
+        Button left = findViewById(R.id.guardar_orden);
+        Button right = findViewById(R.id.guardar_orden);
+        Button forward = findViewById(R.id.guardar_orden);
+        Button back = findViewById(R.id.guardar_orden);
+        Button cw = findViewById(R.id.guardar_orden);
+        Button ccw = findViewById(R.id.guardar_orden);
+        Button flip = findViewById(R.id.guardar_orden);
+        Button speed = findViewById(R.id.guardar_orden);
 
-                String resultado = op1.getText().toString();
-                list.setText(resultado);
+*/
 
-            }
-        });
-        return view;
     }
 }

@@ -40,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/white"
         android:layout_below="@id/cabecera"
         tools:ignore="UselessParent">
         <Button
@@ -143,37 +144,6 @@
             android:textSize="15sp"
             />
 
-        <EditText
-            android:id="@+id/op1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:backgroundTint="@color/blue"
-            android:hint="@string/comando"
-            android:inputType="text"
-            android:minHeight="48dp"
-            android:textColor="@color/black"
-            android:textColorHint="#039BE5"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:padding="20sp"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textAlignment="textStart"
-
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/guardar"
-            android:text="@string/guardar"
-            android:layout_gravity="center"
-            />
 
     </LinearLayout>
 </RelativeLayout>

@@ -81,8 +81,24 @@
             android:textSize="15sp"
             style="?android:attr/buttonBarButtonStyle" />
 </LinearLayout>
+    <LinearLayout
+        android:padding="20sp"
+        android:layout_below="@id/menu"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <fragment
+        android:name="com.example.mytello.guardar"
+        android:id="@+id/nuevaorden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
 
+
+    </fragment>
+</LinearLayout>
 
 </RelativeLayout>
 
