@@ -1,12 +1,18 @@
 package com.example.mytello;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ListAdapter;
+
+import java.util.ArrayList;
 
 public class lista_ordenes extends AppCompatActivity {
 
     private Button up,down,left,right,forward,back,cw,ccw,flip,speed;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +20,8 @@ public class lista_ordenes extends AppCompatActivity {
         setContentView(R.layout.lista_ordenes);
 //crear ordenes, 1era, 2da..etc.. y mostrarlos en un fragment en este layout,
 // confirmar para poder añadirlo en el layout en la activity "Nuevo" con un fragment.
+
+
 
 
      /*   Button up = findViewById(R.id.guardar_orden);
