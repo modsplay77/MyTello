@@ -47,17 +47,6 @@
     android:orientation="horizontal"
        android:padding="10sp"
     >
-        <Button
-            android:id="@+id/añadir"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="@string/nueva_orden"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            style="?android:attr/buttonBarButtonStyle" />
-
 
         <Button
             android:id="@+id/borrar"
@@ -68,7 +57,9 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="15sp"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:layout_marginHorizontal="@android:dimen/system_app_widget_background_radius"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:targetApi="s" />
         <Button
             android:id="@+id/orden"
             android:layout_width="wrap_content"
@@ -79,26 +70,130 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="15sp"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:layout_marginHorizontal="@android:dimen/system_app_widget_inner_radius"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:targetApi="s" />
 </LinearLayout>
-    <LinearLayout
+    <ScrollView
         android:padding="20sp"
         android:layout_below="@id/menu"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent">
-    <fragment
-        android:name="com.example.mytello.add_orden"
-        android:id="@+id/nuevaorden"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_add_orden">
+        >
+        <LinearLayout
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+            tools:ignore="UselessParent">
+            <Button
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/up"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+                />
+            <Button
+                android:id="@+id/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/down"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+
+                />
+            <Button
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/left"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+
+                />
+            <Button
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/right"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
 
 
 
-    </fragment>
-</LinearLayout>
+                />
+            <Button
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forward"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+
+                />
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <Button
+                android:id="@+id/cw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cw"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <Button
+                android:id="@+id/ccw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ccw"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <Button
+                android:id="@+id/flip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flip"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <Button
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+</ScrollView>
 
 </RelativeLayout>
 

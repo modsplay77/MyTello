@@ -1,10 +1,13 @@
 package com.example.mytello;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.StringRes;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class nuevo extends AppCompatActivity {
 
@@ -13,16 +16,22 @@ public class nuevo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo);
 
-        Button anadir = findViewById(R.id.añadir);
+
+
+
+        Button orden = findViewById(R.layout.fragment_add_orden);
         //Button borrar = findViewById(R.id.borrar);
         //Button ordenar = findViewById(R.id.ordenar);
 
-        anadir.setOnClickListener(new View.OnClickListener() {
+        orden.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), lista_ordenes.class);
+                Intent intent = new Intent(v.getContext(), conf_orden.class);
                 startActivityForResult(intent, 0);
-                setContentView(R.layout.lista_ordenes);
+                setContentView(R.layout.conf_orden);
+
+
+
             }
         });
 

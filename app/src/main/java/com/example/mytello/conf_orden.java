@@ -13,16 +13,13 @@ import android.widget.TextView;
 
 
 
-public class guardar extends Fragment {
+public class conf_orden extends Fragment {
 
     private EditText op1;
     private TextView list;
     private Button guardar;
 
-    public guardar() {
-        // Required empty public constructor
 
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
