@@ -19,16 +19,15 @@ public class nuevo extends AppCompatActivity {
 
 
 
-        Button orden = findViewById(R.layout.fragment_add_orden);
+        Button up = findViewById(R.id.up);
         //Button borrar = findViewById(R.id.borrar);
         //Button ordenar = findViewById(R.id.ordenar);
 
-        orden.setOnClickListener(new View.OnClickListener() {
+        up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), conf_orden.class);
-                startActivityForResult(intent, 0);
                 setContentView(R.layout.conf_orden);
+
 
 
 
