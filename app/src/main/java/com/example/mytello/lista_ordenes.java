@@ -2,6 +2,7 @@ package com.example.mytello;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.BaseColumns;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -38,4 +39,26 @@ public class lista_ordenes extends AppCompatActivity {
 */
 
     }
+    public final class FeedReaderContract {
+        // To prevent someone from accidentally instantiating the contract class,
+        // make the constructor private.
+        private FeedReaderContract() {}
+
+        /* Inner class that defines the table contents */
+        public class FeedEntry implements BaseColumns {
+            public static final String TABLE_NAME = "entry";
+            public static final String COLUMN_NAME_TITLE = "title";
+            public static final String COLUMN_NAME_SUBTITLE = "subtitle";
+        }
+    }
+    public static final String SQL_CREATE_ENTRIES =
+            "CREATE TABLE " + FeedReaderContract.FeedEntry.TABLE_NAME + " (" +
+                    FeedReaderContract.FeedEntry._ID + " INTEGER PRIMARY KEY," +
+                    FeedReaderContract.FeedEntry.COLUMN_NAME_TITLE + " TEXT," +
+                    FeedReaderContract.FeedEntry.COLUMN_NAME_SUBTITLE + " TEXT)";
+
+    private static final String SQL_DELETE_ENTRIES =
+            "DROP TABLE IF EXISTS " + FeedReaderContract.FeedEntry.TABLE_NAME;
+
+
 }
