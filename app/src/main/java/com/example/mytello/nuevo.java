@@ -20,7 +20,7 @@ public class nuevo extends AppCompatActivity {
         Button down = findViewById(R.id.down);
         Button left = findViewById(R.id.left);
         Button right = findViewById(R.id.right);
-        Button fordward = findViewById(R.id.forward);
+        Button ford = findViewById(R.id.forward);
         Button back = findViewById(R.id.back);
         Button cw = findViewById(R.id.cw);
         Button ccw = findViewById(R.id.ccw);
@@ -54,7 +54,7 @@ public class nuevo extends AppCompatActivity {
                 setContentView(R.layout.conf_orden);
             }
         });
-        fordward.setOnClickListener(new View.OnClickListener() {
+        ford.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.conf_orden);

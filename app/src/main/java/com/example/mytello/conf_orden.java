@@ -1,6 +1,6 @@
 package com.example.mytello;
 
-import static com.example.mytello.R.layout.fragment_guardar;
+import static com.example.mytello.R.layout.fragment_conf_orden;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,7 +25,7 @@ public class conf_orden extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(fragment_guardar, container, false);
+        View view = inflater.inflate(fragment_conf_orden, container, false);
         guardar = view.findViewById(R.id.guardar);
         op1 = view.findViewById(R.id.op1);
         list = view.findViewById(R.id.list);
