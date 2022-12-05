@@ -16,10 +16,17 @@ public class nuevo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo);
 
-
-
-
         Button up = findViewById(R.id.up);
+        Button down = findViewById(R.id.down);
+        Button left = findViewById(R.id.left);
+        Button right = findViewById(R.id.right);
+        Button fordward = findViewById(R.id.forward);
+        Button back = findViewById(R.id.back);
+        Button cw = findViewById(R.id.cw);
+        Button ccw = findViewById(R.id.ccw);
+        Button flip = findViewById(R.id.flip);
+        Button speed = findViewById(R.id.speed);
+
         //Button borrar = findViewById(R.id.borrar);
         //Button ordenar = findViewById(R.id.ordenar);
 
@@ -27,10 +34,60 @@ public class nuevo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.conf_orden);
-
-
-
-
+            }
+        });
+        down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        fordward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        cw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        ccw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        flip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
+            }
+        });
+        speed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.conf_orden);
             }
         });
 
