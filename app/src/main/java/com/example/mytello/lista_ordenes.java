@@ -23,6 +23,7 @@ public class lista_ordenes extends AppCompatActivity {
 // confirmar para poder añadirlo en el layout en la activity "Nuevo" con un fragment.
 
 
+        setContentView(R.id.pro_actual);
 
 
      /*   Button up = findViewById(R.id.guardar_orden);

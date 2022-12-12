@@ -18,4 +18,5 @@
     <string name="flip">Flip in “x” direction. “l” = left “r” = right “f” = forward “b” = back</string>
     <string name="speed">Set speed to “x” cm/s. x = 10-100</string>
     <string name="pro_actual">Ordenes para el proyecto actual</string>
+    <string name="proyecto">Introduce nombre del proyecto</string>
 </resources>

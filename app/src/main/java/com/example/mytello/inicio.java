@@ -13,9 +13,9 @@ public class inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inicio);
 
-        Button nuevo = findViewById(R.id.proyecto);
+        Button nuevo = findViewById(R.id.nuevo);
         nuevo.setOnClickListener(new View.OnClickListener() {
-            @Override
+        @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), nuevo.class);
                 startActivityForResult(intent, 0);

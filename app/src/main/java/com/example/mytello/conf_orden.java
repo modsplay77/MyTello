@@ -2,6 +2,7 @@ package com.example.mytello;
 
 import static com.example.mytello.R.layout.fragment_conf_orden;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -21,6 +22,7 @@ public class conf_orden extends Fragment {
 
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class conf_orden extends Fragment {
         View view = inflater.inflate(fragment_conf_orden, container, false);
         guardar = view.findViewById(R.id.guardar);
         op1 = view.findViewById(R.id.op1);
-        list = view.findViewById(R.id.list);
+        list = view.findViewById(R.id.lista);
 
         guardar.setOnClickListener(new View.OnClickListener() {
 
