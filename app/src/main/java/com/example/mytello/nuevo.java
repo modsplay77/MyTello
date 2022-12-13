@@ -42,7 +42,8 @@ Integer mRowId = null;
         mOrden = (TextView) findViewById(R.id.orden);
         mValor =(TextView) findViewById(R.id.valor);
 
-        }
+    mView =(TextView)findViewById((R.id.textView))
+    }
 
     protected void saveData() {
         //obtener datos

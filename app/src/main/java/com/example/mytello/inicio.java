@@ -25,7 +25,7 @@ public class inicio extends AppCompatActivity {
         nuevo.setOnClickListener(new View.OnClickListener() {
         @Override
             public void onClick(View v) {
-            Intent intent = new Intent(nuevo.this,nuevo.class);
+            Intent intent = new Intent(inicio.this,nuevo.class);
             startActivityForResult(intent, NEW_ITEM);
             }
         });

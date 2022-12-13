@@ -17,13 +17,14 @@ public class DataBaseHelper {
     //tabla y campos
     private static final String DATABASE_TABLE_PLANES = "Planes";
     public static final String SL_ID ="_id";
+    public static final String SL_NOMBRE ="nombre";
     public static final String SL_PIORIDAD ="Prioridad";
     public static final String SL_ORDEN ="valor orden";
     public static final String SL_VALOR ="valor";
 
     //SQL de creación de la tabla
     private static final String DATABASE_CREATE_PLANES = "create table "+ DATABASE_TABLE_PLANES +
-            " ("+SL_ID+" integer primary key, "+SL_PIORIDAD+" integer not null,"+SL_ORDEN+"text not null, "+SL_VALOR+" integer not null)";
+            " ("+SL_ID+" integer primary key,"+SL_NOMBRE" text not null, "+SL_PIORIDAD+" integer not null,"+SL_ORDEN+"text not null, "+SL_VALOR+" integer not null)";
 
     //constructor
     public DataBaseHelper (Context ctx){
