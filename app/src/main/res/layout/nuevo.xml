@@ -29,72 +29,38 @@
 
         <TextView
             android:id="@+id/ordenes"
-            android:background="@color/blue"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/ordenes"
+            android:text="@string/nuevo"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="15sp" />
     </LinearLayout>
 
-   <LinearLayout
-    android:id="@+id/menu"
-    android:layout_below="@id/cabecera"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-       android:padding="10sp"
-    >
-
-        <Button
-            android:id="@+id/borrar"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="@string/borrar"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginHorizontal="@android:dimen/system_app_widget_background_radius"
-            style="?android:attr/buttonBarButtonStyle"
-            tools:targetApi="s" />
-        <Button
-            android:id="@+id/orden"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:text="@string/cambiar_orden"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginHorizontal="@android:dimen/system_app_widget_inner_radius"
-            style="?android:attr/buttonBarButtonStyle"
-            tools:targetApi="s" />
-</LinearLayout>
 <LinearLayout
     android:id="@+id/proyecto"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_below="@id/menu"
+    android:layout_below="@id/cabecera"
     android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/nombre"
+        android:singleLine="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:autofillHints=""
+        android:hint="@string/proyecto"
         android:backgroundTint="@color/blue"
         android:gravity="center_horizontal"
-        android:hint="@string/proyecto"
         android:inputType="text"
         android:minHeight="48dp"
         android:textColor="@color/black"
         android:textColorHint="#0277BD"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/guardar"

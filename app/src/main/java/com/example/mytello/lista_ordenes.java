@@ -15,17 +15,11 @@ public class lista_ordenes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_ordenes);
-        datos();
+
 
     }
 
-    private void datos() {
-        Bundle extras = getIntent().getExtras();
 
-        String datos= extras.putString(nombre);
-        pro_actual = (TextView) findViewById(R.id.proyecto);
-        pro_actual.setText(datos);
-    }
 
 
 

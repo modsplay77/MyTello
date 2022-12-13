@@ -3,13 +3,13 @@ package com.example.mytello;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class nuevo extends AppCompatActivity {
-
-    String nombre = "Proyecto nuevo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,9 @@ public class nuevo extends AppCompatActivity {
             guardar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(v.getContext(), lista_ordenes.class);
-                    Intent extra = intent.putExtra(nombre);
-                    startActivityForResult(intent, 0);
+                    EditText nombre = (EditText) findViewById(R.id.nombre);
+                    Log.d("nombre",nombre.getText().toString());
+
                 }
             });
 
