@@ -7,8 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class lista_ordenes extends AppCompatActivity {
-    TextView pro_actual;
-     String nombre;
+
 
 
     @Override
