@@ -72,7 +72,7 @@ public class DataBaseHelper {
         },null, null, SL_PIORIDAD, null, null);
     }
     //crear elemento
-    public long inserItem(String nombre, String prioridad, String orden, String valor){
+    public long inserItem(String nombre, String prioridad, String orden, String valor, int i){
         ContentValues initialValues = new ContentValues();
         initialValues.put(SL_NOMBRE, nombre);
         initialValues.put(SL_PIORIDAD, prioridad);

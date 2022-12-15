@@ -38,7 +38,7 @@ Integer mRowId = null;
         });
         //obtener referencias
         mNom = (TextView) findViewById(R.id.nombre);
-        mPrio = (TextView) findViewById(R.id.Prioridad);
+        mPrio = (TextView) findViewById(R.id.prioridad);
         mOrden = (TextView) findViewById(R.id.orden);
         mValor = (TextView) findViewById(R.id.valor);
     }
@@ -57,7 +57,7 @@ Integer mRowId = null;
             inicio.mDbHelper.close();
         } catch (SQLException e) {
             e.printStackTrace();
-            showMessage(R.id.dataError);
+            //showMessage(R.id.dataError);
         }
     }
     private void showMessage(int message){
