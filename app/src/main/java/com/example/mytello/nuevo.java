@@ -26,6 +26,16 @@ Integer mRowId = null;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo);
+        mTView = (TextView) findViewById(R.id.listar);
+        //abrir BD
+        mDHelper = new DataBaseHelper(this);
+        try {
+            fillData();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            showMessage(R.string.dataError);
+        }
+
 
         Button guardar = findViewById(R.id.guardar);
         guardar.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +67,7 @@ Integer mRowId = null;
             inicio.mDbHelper.close();
         } catch (SQLException e) {
             e.printStackTrace();
-            //showMessage(R.id.dataError);
+            showMessage(R.id.dataError);
         }
     }
     private void showMessage(int message){
