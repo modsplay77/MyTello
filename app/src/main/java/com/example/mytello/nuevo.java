@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class nuevo extends AppCompatActivity {
 //referencias a elementos de pantalla
-    TextView mId = null;
+    TextView mNom = null;
     TextView mPrio = null;
     TextView mOrden = null;
     TextView mValor = null;
@@ -28,26 +28,24 @@ Integer mRowId = null;
         setContentView(R.layout.nuevo);
 
         Button guardar = findViewById(R.id.guardar);
-            guardar.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    setResult(RESULT_OK);
-                    saveData();
-                    finish();
-                }
-            });
-    //obtener referencias
-        mId = (TextView)  findViewById(R.id.id);
+        guardar.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                setResult(RESULT_OK);
+                saveData();
+                finish();
+            }
+        });
+        //obtener referencias
+        mNom = (TextView) findViewById(R.id.nombre);
         mPrio = (TextView) findViewById(R.id.Prioridad);
         mOrden = (TextView) findViewById(R.id.orden);
-        mValor =(TextView) findViewById(R.id.valor);
-
-    mView =(TextView)findViewById((R.id.textView))
+        mValor = (TextView) findViewById(R.id.valor);
     }
 
     protected void saveData() {
         //obtener datos
-        String idText = mId.getText().toString();
+        String nomText = mNom.getText().toString();
         String prioText = mPrio.getText().toString();
         String ordenText = mOrden.getText().toString();
         String valorText = mValor.getText().toString();
@@ -55,7 +53,7 @@ Integer mRowId = null;
         //insertar
         try{
             inicio.mDbHelper.open();
-            inicio.mDbHelper.inserItem(idText, prioText, ordenText,valorText,Integer.parseInt(ordenText));
+            inicio.mDbHelper.inserItem(nomText, prioText, ordenText,valorText,Integer.parseInt(ordenText));
             inicio.mDbHelper.close();
         } catch (SQLException e) {
             e.printStackTrace();

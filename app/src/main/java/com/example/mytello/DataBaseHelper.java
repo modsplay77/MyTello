@@ -19,12 +19,12 @@ public class DataBaseHelper {
     public static final String SL_ID ="_id";
     public static final String SL_NOMBRE ="nombre";
     public static final String SL_PIORIDAD ="Prioridad";
-    public static final String SL_ORDEN ="valor orden";
+    public static final String SL_ORDEN ="orden";
     public static final String SL_VALOR ="valor";
 
     //SQL de creación de la tabla
-    private static final String DATABASE_CREATE_PLANES = "create table "+ DATABASE_TABLE_PLANES +
-            " ("+SL_ID+" integer primary key,"+SL_NOMBRE" text not null, "+SL_PIORIDAD+" integer not null,"+SL_ORDEN+"text not null, "+SL_VALOR+" integer not null)";
+    private static final String DATABASE_CREATE_PLANES =
+            "create table "+ DATABASE_TABLE_PLANES +" ("+SL_ID+" integer primary key,+"+SL_NOMBRE+" text not null, "+SL_PIORIDAD+" integer not null,"+SL_ORDEN+"text not null, "+SL_VALOR+" integer not null)";
 
     //constructor
     public DataBaseHelper (Context ctx){
@@ -58,7 +58,7 @@ public class DataBaseHelper {
 
     }
     public DataBaseHelper open() throws SQLException{
-        mDbHelper = new DataBaseHelperInternal(open().mCtx);
+        mDbHelper = new DataBaseHelperInternal(mCtx);
         mDb = mDbHelper.getWritableDatabase();
         return this;
     }
@@ -68,16 +68,16 @@ public class DataBaseHelper {
 
     //obtener el contenido de todos los campos
     public Cursor getItems(){
-        return mDb.query(DATABASE_TABLE_PLANES, new String[]{
-         SL_ID,SL_PIORIDAD, SL_ORDEN,SL_VALOR
-        }, null, SL_PIORIDAD, null, null);
+        return mDb.query(DATABASE_TABLE_PLANES, new String[] {SL_ID, SL_NOMBRE, SL_PIORIDAD, SL_ORDEN, SL_VALOR
+        },null, null, SL_PIORIDAD, null, null);
     }
     //crear elemento
-    public long inserItem(String id,String prioridad, String orden,String valor){
+    public long inserItem(String nombre, String prioridad, String orden, String valor){
         ContentValues initialValues = new ContentValues();
+        initialValues.put(SL_NOMBRE, nombre);
         initialValues.put(SL_PIORIDAD, prioridad);
         initialValues.put(SL_ORDEN, orden);
-        initialValues.put(SL_VALOR);
+        initialValues.put(SL_VALOR, valor);
         return mDb.insert(DATABASE_TABLE_PLANES, null, initialValues);
     }
 
