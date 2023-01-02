@@ -118,6 +118,21 @@
         android:textColor="#424242" />
 
 </LinearLayout>
+    <ScrollView
+        android:id="@+id/roll"
+        android:layout_below="@id/proyecto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/listar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+
+
+    </ScrollView>
 
 </RelativeLayout>
 

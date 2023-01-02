@@ -24,7 +24,7 @@ public class DataBaseHelper {
 
     //SQL de creación de la tabla
     private static final String DATABASE_CREATE_PLANES =
-            "create table "+ DATABASE_TABLE_PLANES +" ("+SL_ID+" integer primary key,+"+SL_NOMBRE+" text not null, "+SL_PIORIDAD+" integer not null,"+SL_ORDEN+"text not null, "+SL_VALOR+" integer not null)";
+            "create table "+ DATABASE_TABLE_PLANES +" ("+SL_ID+" integer primary key,"+SL_NOMBRE+" text not null, "+SL_PIORIDAD+" integer not null,"+SL_ORDEN+"text not null, "+SL_VALOR+" integer not null)";
 
     //constructor
     public DataBaseHelper (Context ctx){

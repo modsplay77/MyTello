@@ -16,14 +16,14 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class inicio extends AppCompatActivity {
-//acciones
-    public static final int NEW_ITEM =1;
-    public static final int EDIT_ITEM =2;
-    public static final int SHOW_ITEM =3;
-//elementos seleccionados
+    //acciones
+    public static final int NEW_ITEM=1;
+    public static final int EDIT_ITEM=2;
+    public static final int SHOW_ITEM=3;
+
+    //elemento seleccionado
     public static DataBaseHelper mDbHelper = null;
-    TextView mTView = null;
-    private DataBaseHelper mDHelper;
+    TextView mTextView =null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class inicio extends AppCompatActivity {
             fillData();
         } catch (SQLException e) {
             e.printStackTrace();
-            showMessage(R.string.dataError);
+          //  showMessage(R.string.dataError);
         }
 
         Button nuevo = findViewById(R.id.nuevo);
@@ -74,12 +74,12 @@ public class inicio extends AppCompatActivity {
             int prioridad = itemCursor.getInt(itemCursor.getColumnIndex(DataBaseHelper.SL_PIORIDAD));
             String orden = itemCursor.getString(itemCursor.getColumnIndex(DataBaseHelper.SL_ORDEN));
             int valor = itemCursor.getInt(itemCursor.getColumnIndex(DataBaseHelper.SL_VALOR));
-            item = new ListEntry();
-            item.id = id;
-            item.nombre = nombre;
-            item.prioridad = prioridad;
-            item.orden = orden;
-            item.valor = valor;
+         //   item = new ListEntry();
+         //   item.id = id;
+         //   item.nombre = nombre;
+         //   item.prioridad = prioridad;
+         //   item.orden = orden;
+         //   item.valor = valor;
             resultList.add(item);
         }
         //cerramos la BD
@@ -89,10 +89,10 @@ public class inicio extends AppCompatActivity {
         //se genera el adaptador
         final ItemAdapter adapter = new ItemAdapter(resultList);
         //asignar adaptador a la lista
-        mTView.setAdapter(adapter);
+      //  mTView.setAdapter(adapter);
         //asignar layoutmanager
-        mTView.setLayoutParams(
-                new LinearLayout(this,LinearLayout.VERTICAL, false));
+      //  mTView.setLayoutParams(
+       //         new LinearLayout(this,LinearLayout.VERTICAL, false));
 
 
     }

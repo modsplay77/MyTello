@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class nuevo extends AppCompatActivity {
+
+
 //referencias a elementos de pantalla
     TextView mNom = null;
     TextView mPrio = null;
@@ -22,35 +24,42 @@ public class nuevo extends AppCompatActivity {
 
 //identificador de entrada
 Integer mRowId = null;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo);
-        mTView = (TextView) findViewById(R.id.listar);
+        TextView mTView = (TextView) findViewById(R.id.listar);
         //abrir BD
         mDHelper = new DataBaseHelper(this);
         try {
             fillData();
         } catch (SQLException e) {
             e.printStackTrace();
-            showMessage(R.string.dataError);
+           // showMessage(R.string.dataError);
         }
 
 
         Button guardar = findViewById(R.id.guardar);
         guardar.setOnClickListener(new View.OnClickListener() {
-
+        @Override
             public void onClick(View v) {
-                setResult(RESULT_OK);
-                saveData();
-                finish();
+
+              setResult(RESULT_OK);
+              saveData();
+              finish();
             }
         });
+
         //obtener referencias
         mNom = (TextView) findViewById(R.id.nombre);
         mPrio = (TextView) findViewById(R.id.prioridad);
         mOrden = (TextView) findViewById(R.id.orden);
         mValor = (TextView) findViewById(R.id.valor);
+    }
+
+    private void fillData() {
     }
 
     protected void saveData() {
@@ -72,7 +81,7 @@ Integer mRowId = null;
     }
     private void showMessage(int message){
         Toast.makeText(getApplicationContext(), getResources().getString(message),
-                LENGTH_SHORT) .show();
+        Toast.LENGTH_SHORT) .show();
     }
 
 
