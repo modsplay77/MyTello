@@ -29,7 +29,7 @@ public class inicio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inicio);
-       mTView = (TextView) findViewById(R.id.listar);
+       mTextView = (TextView) findViewById(R.id.listar);
         //abrir BD
         mDHelper = new DataBaseHelper(this);
         try {
