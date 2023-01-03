@@ -32,15 +32,15 @@ Integer mRowId = null;
         setContentView(R.layout.nuevo);
         TextView mTView = (TextView) findViewById(R.id.listar);
         //abrir BD
-        mDHelper = new DataBaseHelper(this);
+        mDbHelper = new DataBaseHelper(this);
         try {
             fillData();
         } catch (SQLException e) {
             e.printStackTrace();
-           // showMessage(R.string.dataError);
+            showMessage(R.string.dataError);
         }
 
-
+        //salvar
         Button guardar = findViewById(R.id.guardar);
         guardar.setOnClickListener(new View.OnClickListener() {
         @Override
